@@ -33,7 +33,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import src_code.controller;
 
 
 
@@ -63,7 +62,7 @@ public class FacePanel extends JPanel implements Runnable
 
   // for saving a detected face image
   private static final String FACE_DIR = "savedFaces/users";
-  private static final String FACE_FNM = controller.geteid();
+  public static String FACE_FNM;
   private static final int FACE_WIDTH = 125;
   private static final int FACE_HEIGHT = 150;
 
